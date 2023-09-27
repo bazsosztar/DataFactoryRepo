@@ -1,0 +1,9 @@
+{
+	"name": "firstdummy1",
+	"location": "westeurope",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "7c719b11-7073-4602-9a96-a10c6d040a6b",
+		"tenantId": "18790e8e-16b7-43e4-9960-a0cdabb83d39"
+	}
+}
