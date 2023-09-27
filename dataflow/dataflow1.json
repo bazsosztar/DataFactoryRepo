@@ -1,0 +1,29 @@
+{
+	"name": "dataflow1",
+	"properties": {
+		"type": "MappingDataFlow",
+		"typeProperties": {
+			"sources": [
+				{
+					"linkedService": {
+						"referenceName": "GoogleSheets1",
+						"type": "LinkedServiceReference"
+					},
+					"name": "source1"
+				}
+			],
+			"sinks": [],
+			"transformations": [],
+			"scriptLines": [
+				"source(allowSchemaDrift: true,",
+				"     validateSchema: false,",
+				"     store: 'googlesheets',",
+				"     format: 'rest',",
+				"     spreadSheetId: '1CGzrgYlcoHbpDnUTo4oWgNPlFMQuEeYgCeyvqm6Pvds',",
+				"     startCell: 'A2',",
+				"     endCell: 'G34',",
+				"     sheetName: 'Timesheet2023.01') ~> source1"
+			]
+		}
+	}
+}
